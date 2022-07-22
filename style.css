@@ -159,6 +159,7 @@ body {
     padding-bottom: 15px;
 }
 
+/* check box styling reference https://stackoverflow.com/questions/4148499/how-to-style-a-checkbox-using-css */
 .box {
     background: #666666;
     color: #ffffff;
@@ -198,6 +199,9 @@ input[type="checkbox"]:checked+label:before {
     color: #333;
     content: "\2713";
     text-align: center;
+}
+input:checked + label {
+text-decoration: line-through;
 }
 
 .recipeOwner {
