@@ -52,7 +52,7 @@ table {
 /* my styling */
 
 body {
-    margin: 2% 6.7%;
+    margin: 2% 10%;
 }
 .navBar {
     display: flex;
@@ -123,6 +123,14 @@ font-weight: 700;
     display: flex;
     justify-content: center;
 }
+#pizzaImage img {
+    width: 100%;
+}
+
+#paragraphsDiv p {
+    font-size: 25px;
+    color: rgb(107, 106, 106);
+}
 
 #listContainerDiv {
     display: flex;
@@ -134,6 +142,7 @@ font-weight: 700;
     background-image: url(./assets/list-bg.png);
     background-repeat: no-repeat;
     background-position: center;
+    padding: 3% 0%;
     
 }
 
