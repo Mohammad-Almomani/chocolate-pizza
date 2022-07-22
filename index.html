@@ -9,43 +9,40 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@100&family=Roboto+Condensed:wght@300;700&family=Special+Elite&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&family=Kalam:wght@300&family=Poppins:wght@100&family=Roboto+Condensed:wght@300;400;700&family=Special+Elite&display=swap" rel="stylesheet"> 
+        <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
         <div class="navBar">
-        <div id="titleDiv">
-            <img id="navLogo" src="./assets/logo.png" alt="logo">
-            <div>
-                <h2>Delicious</h2>
-                <p>THE BEST FOOD BLOG ON THE WEB</p>
+            <div id="titleDiv">
+                <img id="navLogo" src="./assets/logo.png" alt="logo">
+                <div>
+                    <h2>Delicious</h2>
+                    <p>THE BEST FOOD BLOG ON THE WEB</p>
+                </div>
+
             </div>
+            <div id="imagesDiv">
+                <img src="./assets/fb-icon.png" alt="facebook icon">
+                <img src="./assets/twit-icon.png" alt="twitter icon">
+                <img src="./assets/gp-icon.png" alt="google pluse icon">
+                <img src="./assets/insta-icon.png" alt="insta icon">
+                <img src="./assets/flic-icon.png" alt="flic icon">
+                <img src="./assets/pint-icon.png" alt="pint icon">
+                <img src="./assets/rss-icon.png" alt="rss icon">
+                <img src="./assets/mail-icon.png" alt="mail icon">
 
+            </div>
         </div>
-        <div id="imagesDiv">
-            <img src="./assets/fb-icon.png" alt="facebook icon">
-            <img src="./assets/twit-icon.png" alt="twitter icon">
-            <img src="./assets/gp-icon.png" alt="google pluse icon">
-            <img src="./assets/insta-icon.png" alt="insta icon">
-            <img src="./assets/flic-icon.png" alt="flic icon">
-            <img src="./assets/pint-icon.png" alt="pint icon">
-            <img src="./assets/rss-icon.png" alt="rss icon">
-            <img src="./assets/mail-icon.png" alt="mail icon">
-
+        <div>
+            <HR>
+            </HR>
+            <br><br><br>
         </div>
-    </div>
-    <div>
-        <HR></HR>
-        <br><br><br>
-    </div>
     </header>
-        <main>
+    <main>
         <div id="mainTitle">
             <div>
                 <h1>Chocolate Pizza</h1>
@@ -56,21 +53,21 @@
                 <a>PRINT</a>
             </div>
         </div>
-        
+
         <br><br>
         <div id="pizzaImage">
             <img src="./assets/choco-pizza.png" alt="Chocolate Pizza">
         </div>
 
         <div id="paragraphsDiv">
-            <br><br>
+            <br><br><br>
             <p> &nbsp;&nbsp;&nbsp;&nbsp; For the fig-swirl: Melt butter over medium heat in the saucepan. Add brown
                 sugar and stir to dissolve. Halve all of the figs and toss in the saucepan wih water and lemon juice.
                 Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or
-                two stirs, set aside and let cool completely. </p><br><br>
+                two stirs, set aside and let cool completely. </p><br><br><br>
             <p> &nbsp;&nbsp;&nbsp;&nbsp; Ice cream: In a small pot over medium heat, combine milk, and granulated sugar
                 until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set
-                mixture in the fridge and wait until the fig mixture is cooled. </p><br><br>
+                mixture in the fridge and wait until the fig mixture is cooled. </p><br><br><br>
             <p> &nbsp;&nbsp;&nbsp;&nbsp; Using an ice cream machine, pour liquids into frozen basin and process
                 according to manufacturer instructions, i.e, let spin and thicken for 20 minutes before adding
                 mascarpone, fig jam mixture, and the nuts. continue to process for =/- 10 minutes. Pour semi-frozen
@@ -83,28 +80,57 @@
             <div id="listContainerDiv">
                 <div>
                     <ul>
-                        <li><input type="checkbox"> 1 1/2 cups milk</li>
-                        <li><input type="checkbox"> 1/2 cup mascarpone</li>
-                        <li><input type="checkbox"> 1/2 tsp pink salt</li>
-                        <li><input type="checkbox"> 1 lb Black Mission Figs</li>
-                        <li><input type="checkbox"> 1/2 cup brown sugar</li>
-                        <li><input type="checkbox"> 2-4 tbsp water</li>
+                        <li><input type="checkbox" id="c1" name="cb">
+                            <label for="c1">1 1/2 cups milk</label>
+                        </li>
+                        <li><input type="checkbox" id="c2" name="cb">
+                            <label for="c2">1/2 cup mascarpone</label>
+                        </li>
+                        <li><input type="checkbox" id="c3" name="cb">
+                            <label for="c3">1/2 tsp pink salt</label>
+                        </li>
+                        <li><input type="checkbox" id="c4" name="cb">
+                            <label for="c4">1 lb Black Mission Figs</label>
+                        </li>
+                        <li><input type="checkbox" id="c5" name="cb">
+                            <label for="c5">1/2 cup brown sugar</label>
+                        </li>
+                        <li><input type="checkbox" id="c6" name="cb">
+                            <label for="c6">2-4 tbsp water</label>
+                        </li>
                         <ul>
                 </div>
                 <div>
                     <ul>
-                        <li><input type="checkbox"> 1 1/2 cups heavy cream</li>
-                        <li><input type="checkbox"> 1/3 granulated sugar</li>
-                        <li><input type="checkbox"> 2 egg yolks</li>
-                        <li><input type="checkbox"> 1 lemon, juiced</li>
-                        <li><input type="checkbox"> 2 tbsp butter</li>
-                        <li><input type="checkbox"> 1 cup honey roasted pecans, roughly chopped</li>
+                        <li><input type="checkbox" id="c7" name="cb">
+                            <label for="c7">1 1/2 cups heavy cream</label>
+                        </li>
+                        <li><input type="checkbox" id="c8" name="cb">
+                            <label for="c8">granulated sugar</label>
+                        </li>
+                        <li><input type="checkbox" id="c9" name="cb">
+                            <label for="c9">2 egg yolks</label>
+                        </li>
+                        <li><input type="checkbox" id="c10" name="cb">
+                            <label for="c10">1 lemon, juiced</label>
+                        </li>
+                        <li><input type="checkbox" id="c11" name="cb">
+                            <label for="c11">2 tbsp butter</label>
+                        </li>
+                        <li><input type="checkbox" id="c12" name="cb">
+                            <label for="c12">1 cup honey roasted pecans, roughly <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;chopped </label>
+                        </li>
+                        </li>
                         <ul>
                 </div>
             </div>
         </div>
 
-        <br><br><div> <HR></HR></div><br>
+        <br><br>
+        <div>
+            <HR>
+            </HR>
+        </div><br>
 
         <div class="recipeOwner">
             <div id="owner">
@@ -113,21 +139,24 @@
                 </div>
                 <div>
                     <h3>Vanessa Stevenson</h3>
-                    <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am. </p>
+                    <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.
+                    </p>
                 </div>
             </div>
             <div id="share">
-                <button>SHARE RECIPE</button> 
+                <input type="button" value="SHARE RECIPE">
             </div>
         </div>
 
     </main>
     <footer>
-        <HR class="fancy"></HR>
+        <br><br><br><br><br><br>
+        <HR>
+        </HR>
         <div>
-        <p>Delicious &copy;  2013 &#183; All Rights Reserved.</p>
-        <p> Proudly published with Ghost.</p>
-    </div>
+            <p>Delicious &copy; 2013 &#183; All Rights Reserved.</p>
+            <p> Proudly published with Ghost.</p>
+        </div>
     </footer>
 </body>
 

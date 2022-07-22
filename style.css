@@ -52,26 +52,30 @@ table {
 /* my styling */
 
 body {
-    margin: 2% 10%;
+    margin: 2% 15%;
 }
+
 .navBar {
     display: flex;
     justify-content: space-between;
     margin-bottom: 2%;
 }
+
 #titleDiv {
     display: flex;
     gap: 8px;
 }
+
 #titleDiv h2 {
     font-family: 'Italianno', cursive;
     font-size: 50px;
     font-weight: 900;
 }
-#titleDiv p{
-font-size: 10.5px;
-font-family: 'Poppins', sans-serif;
-font-weight: 700;
+
+#titleDiv p {
+    font-size: 10.5px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
 }
 
 #titleDiv img {
@@ -79,43 +83,46 @@ font-weight: 700;
     height: 60px;
 }
 
-#imagesDiv img{
+#imagesDiv img {
     width: 30px;
     height: 35px;
 }
 
-#imagesDiv img:nth-last-child(2){
+#imagesDiv img:nth-last-child(2) {
     padding-left: 12px;
 }
 
 
 
-#imagesDiv{
+#imagesDiv {
     display: flex;
     gap: 2px;
 }
+
 #mainTitle {
     display: flex;
     justify-content: space-between;
 }
-#mainTitle h1{
+
+#mainTitle h1 {
     font-size: 50px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
 }
-#mainTitle p{
-    font-size: 17.5px ;
+
+#mainTitle p {
+    font-size: 17.5px;
     color: darkgray;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 100;
 }
 
-#mainTitle div:nth-child(2) a{
+#mainTitle div:nth-child(2) a {
     color: darkgray;
 
 }
 
-#mainTitle div:nth-child(2){
+#mainTitle div:nth-child(2) {
     margin-top: 3%;
 }
 
@@ -123,39 +130,114 @@ font-weight: 700;
     display: flex;
     justify-content: center;
 }
+
 #pizzaImage img {
     width: 100%;
 }
 
 #paragraphsDiv p {
-    font-size: 25px;
+    font-size: 22px;
     color: rgb(107, 106, 106);
 }
 
 #listContainerDiv {
     display: flex;
     justify-content: center;
-    gap: 8%;
-    /* margin-left: 30%; */
-}
-#ingredientsDiv {
+    gap: 5%;
     background-image: url(./assets/list-bg.png);
     background-repeat: no-repeat;
     background-position: center;
-    padding: 3% 0%;
-    
+    padding: 5% 5%;
+}
+
+
+#listContainerDiv ul {
+    padding-left: 50px;
+}
+
+#listContainerDiv ul li {
+    padding-bottom: 15px;
+}
+
+.box {
+    background: #666666;
+    color: #ffffff;
+    width: 250px;
+    padding: 10px;
+    margin: 1em auto;
+}
+
+.box p {
+    margin: 1.5em 0;
+    padding: 0;
+}
+
+input[type="checkbox"] {
+    visibility: hidden;
+}
+
+label {
+    cursor: pointer;
+    font-family: 'Kalam', cursive;
+}
+
+input[type="checkbox"]+label:before {
+    border: 1px solid #333;
+    border-radius: 4px;
+    content: "\00a0";
+    display: inline-block;
+    font: 16px/1em sans-serif;
+    height: 16px;
+    margin: 0 .25em 0 0;
+    padding: 0;
+    vertical-align: top;
+    width: 16px;
+}
+
+input[type="checkbox"]:checked+label:before {
+    color: #333;
+    content: "\2713";
+    text-align: center;
 }
 
 .recipeOwner {
+    align-items: center;
     display: flex;
     justify-content: space-between;
 }
-.recipeOwner div:nth-child(1){
+
+.recipeOwner div:nth-child(1) {
     display: flex;
+    gap: 20px
+}
+
+#owner div:nth-child(2) h3 {
+    font-size: 23px;
+    padding-bottom: 2%;
+}
+
+#owner div:nth-child(2) p {
+    font-size: 16px;
+    color: rgb(67, 66, 66);
+}
+
+#share input {
+    font-size: 20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 400;
+    padding: 20px 32px;
+    border: none;
+    color: #fff;
+    background: rgb(255, 64, 0);
+}
+
+footer p {
+    color: darkgray;
 }
 
 /* reference for hr https://stackoverflow.com/questions/23878398/diagonal-stripes-that-are-1px-wide */
- header hr, main hr {
+header hr,
+main hr {
     border: none;
     height: 13px;
     background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 50%, rgb(88, 87, 87) 50%, rgb(99, 95, 95) 75%, transparent 75%, transparent);
@@ -168,9 +250,10 @@ footer hr {
     padding: 0;
     border: none;
     border-top: solid rgb(239, 238, 238);
-    color: rgb(239, 238, 238);
+    color: rgb(242, 239, 239);
     text-align: center;
-  }
+}
+
 footer hr:after {
     content: url("./assets/small-logo.png");
     display: inline-block;
@@ -180,9 +263,9 @@ footer hr:after {
     padding: 0 0.25em;
     background: white;
     height: 50px
-  }
+}
 
-  footer div{
+footer div {
     text-align: center;
     font-weight: 100;
-  }
+}
